@@ -1,0 +1,34 @@
+### CREAR UN PRODUCTO
+POST http://localhost:3000/productos
+Content-Type: application/json
+
+{
+  "nombre": "Monitor",
+  "precio": 300,
+  "cantidad": 25
+}
+
+
+
+### OBTENER TODOS LOS PRODUCTOS
+GET http://localhost:3000/productos
+
+
+
+### OBTENER EL PRODUCTO POR ID
+GET http://localhost:3000/productos/675b9543aef40af23add0624
+
+
+
+### ACTUALIZAR EL PRODUCTO POR ID
+PUT http://localhost:3000/productos/675de027728c9284b9a86769
+Content-Type: application/json
+
+{
+  "nombre": "Pc de escritorio",
+  "precio": 5000,
+  "cantidad": 100
+}
+
+### ELIMINAR UN PRODUCTO POR EL ID
+DELETE http://localhost:3000/productos/675de018728c9284b9a86767
